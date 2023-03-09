@@ -4,7 +4,7 @@ A Rede IC fornece o serviço de hospedagem de aplicações web para a comunidade
 
 O serviço de hospedagem é baseado no [Dokku](https://dokku.com/), uma solução open source para plataforma como serviço (PaaS). O Dokku possibilita que o usuário faça o upload do código-fonte da aplicação via Git; o servidor realiza o build da aplicação e a executa em containers Docker isolados.
 
-Para hospedar sua aplicação web, abra um chamado no [Sistema de Suporte do IC](https://suporteic.ufba.br), utilizando o tópico de ajuda "Suporte TI: hospedagem de aplicação". Será necessário fornecer uma chave SSH pública (veja o [tópico a seguir](visao-geral.md))
+Para hospedar sua aplicação web, abra um chamado no [Sistema de Suporte do IC](https://suporteic.ufba.br), utilizando o tópico de ajuda "Suporte TI: hospedagem de aplicação". Será necessário fornecer uma chave SSH pública (veja o [tópico a seguir](chave-ssh.md))
 
 
 
