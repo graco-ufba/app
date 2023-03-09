@@ -1,0 +1,6 @@
+site_name: "Hospedagem de Aplicações na Rede IC"
+theme: readthedocs
+nav:
+  - index.md
+  - chave-ssh.md
+  - deploy.md

@@ -1,0 +1,1 @@
+Este repositório usa o MkDocs. Use o comando `mkdocs serve` para visualizar a documentação no navegador.
