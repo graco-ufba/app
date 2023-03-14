@@ -13,7 +13,13 @@ Troque `<NOME_DA_APLICAÇÃO>` pelo nome da sua aplicação (ou seja, o nome que
 
 **Obs.: O repositório remoto criado para push PRECISA se chamar "dokku". Caso contrário, o deploy sempre retornará uma falha. Isso é uma exigência do sistema.**
 
-* Realizar o deploy com o comando: 
+* Realizar o deploy com o comando (**O primeiro deploy precisa necessariamente utilizar o modificador -f no comanfo git**): 
+
+```
+$ git push -f dokku master
+```
+
+* Após o primeiro deploy, se houver necessidade de realizar outros, não é mais necessário utilizar o modificador indicado acima. Pode-se fazer apenas: 
 
 ```
 $ git push dokku master
