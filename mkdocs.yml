@@ -4,3 +4,4 @@ nav:
   - index.md
   - chave-ssh.md
   - deploy.md
+  - ambiente-local.md
