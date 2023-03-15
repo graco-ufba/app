@@ -6,3 +6,4 @@ nav:
   - deploy.md
   - ambiente-local.md
   - variaveis-de-ambiente.md
+  - modo-build.md
