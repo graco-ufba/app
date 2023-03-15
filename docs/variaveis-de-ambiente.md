@@ -20,4 +20,4 @@ Obs.: `id_rsa` é o id ssh da sua máquina local.
 
 Obs.1: Caso a sua aplicação não utilize variáveis de ambiente, o Dokku utilizará a suas configurações globais para essa configuração.
 
-Obs.2: Lembramos que é possível suprimir os modificadores `-t` e `-p 2299` conforme indicado no tópico de ([ambientes locais](ambiente-local.md))
+Obs.2: Lembramos que é possível suprimir os modificadores `-t` e `-p 2299` conforme indicado no tópico [configurando ambientes locais](ambiente-local.md)
