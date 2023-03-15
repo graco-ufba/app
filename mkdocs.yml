@@ -5,3 +5,4 @@ nav:
   - chave-ssh.md
   - deploy.md
   - ambiente-local.md
+  - variaveis-de-ambiente.md
