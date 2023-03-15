@@ -10,7 +10,7 @@ $ ssh -t -p 2299 dokku@app.ic.ufba.br config:set <NOME_DO_APP> KEY="VALORES\ COM
 ou ainda:
 
 ```
-ssh -t dokku@app.ic.ufba.br config:set sisfila VAR1="valor\ 1" VAR2="valor\ 2"
+ssh -t -p 2299 dokku@app.ic.ufba.br config:set sisfila VAR1="valor\ 1" VAR2="valor\ 2"
 ```
 Dokku também pode ler valores codificados em base64. Essa é a maneira mais fácil de definir um valor com novas linhas ou espaços. Para definir um valor com novas linhas, você precisa primeiro codificá-lo em base64 e passar o sinalizador `--encoded`:
 
