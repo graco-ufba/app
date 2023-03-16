@@ -13,8 +13,7 @@ Lembramos que conforme explicitado no tópico [Configurando ambiente local(ambie
 
 - `postgres:expose <service> <ports>`
 
-Este exemplo acima foi feito com comando de banco de dados postgreSQL, mas poderia ser outro. O comando expõe o banco de dados presente no container Docker a uma porta para acesso externo ao processo. Isso é útil para realizar consultas no banco, backups e afins. Exemplo de execução:
-
+Este exemplo acima foi feito com comando de banco de dados postgreSQL, mas poderia ser outro. O comando expõe o banco de dados presente no container Docker à uma porta para acesso externo ao processo. Isso é útil para realizar consultas no banco, backups e afins. Exemplo de execução:
 
 ```
 $ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:expose teste
@@ -28,7 +27,7 @@ Nesse momento, o servidor retornará em quais portas o serviço está exposto/di
 
 - `run`
 
-O comando `run` pode ser usado para executar um processo único para um comando específico. Isso iniciará um novo contêiner e executará o comando desejado dentro desse contêiner. A imagem do contêiner será a mesma imagem do contêiner usada para iniciar o aplicativo atualmente implantado. Exemplo de execução de listagem detalhada de arquivos de uma aplicação: 
+O comando `run` pode ser usado para executar um processo único para um comando específico. Isso iniciará um novo container e executará o comando desejado dentro desse container. A imagem do container será a mesma imagem do container usada para iniciar o aplicativo atualmente implantado. Exemplo de execução de listagem detalhada de arquivos de uma aplicação: 
 
 ```
 # roda `ls -lah` no diretório `/app` da aplicação `teste`
@@ -55,7 +54,7 @@ Obs.: Decartar a usabilidade da url com schema http. Somente as requisições ht
 
 - `apps:destroy`
 
-Comando que literalmente desvincula a applicação do seu banco de dados associado e a apaga do servidor. Após a execução do comando, o sistema exigirá que escrevamos exatamente o nome da aplicação para confirmação da destruição. Exemplo de execução:
+Comando que desvincula a aplicação do seu banco de dados associado e a apaga do servidor. Após a execução do comando, o sistema exigirá que escrevamos exatamente o nome da aplicação para confirmação da destruição. Exemplo de execução:
 
 ```
 $ ssh -t -p 2299 dokku@app.ic.ufba.br apps:destroy teste
@@ -108,7 +107,7 @@ $ ssh -t -p 2299 dokku@app.ic.ufba.br config:set --encoded <NOME_DO_APP> KEY="$(
 
 - `ps:inspect`
 
-Este comando reunirá todos os IDs de contêiner em execução para seu aplicativo e chamará a inspeção do docker, limpando os dados de saída para que possam ser copiados e colados em outro lugar com segurança. Exemplo de execução:
+Este comando reunirá todos os IDs de container em execução para seu aplicativo e chamará a inspeção do docker, limpando os dados de saída para que possam ser copiados e colados em outro lugar com segurança. Exemplo de execução:
 
 ```
 $ ssh -t -p 2299 dokku@app.ic.ufba.br ps:inspect <NOME_DA_APLICAÇÃO> "
@@ -158,7 +157,7 @@ $ ssh -t -p 2299 dokku@app.ic.ufba.br ps:restart <NOME_DA_APLICAÇÃO> "
 ```
 - `ps:rebuild`
 
-Reconstrói o contêiner Docker da aplicação. Exemplo de execução:
+Reconstrói o container Docker da aplicação. Exemplo de execução:
 
 ```
 $ ssh -t -p 2299 dokku@app.ic.ufba.br ps:rebuild <NOME_DA_APLICAÇÃO> "
