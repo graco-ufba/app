@@ -1,4 +1,4 @@
-# Comandos dispoíneis
+# Comandos disponíveis
 
 Para acessar/manipular a sua aplicação no servidor/container, seguem alguns comandos úteis permitidos para serem executados via SSH. Comando a ser executado precisa necessariamente seguir esse padrão:
 
