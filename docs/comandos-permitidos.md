@@ -160,7 +160,7 @@ $ ssh -t -p 2299 dokku@app.ic.ufba.br config:set <NOME_DA_APLICAÇÃO> VAR1="val
 Exemplo de execução em base64:
 
 ```
-$ ssh -t -p 2299 dokku@app.ic.ufba.br config:set --encoded <NOME_DO_APP> KEY="$(base64 ~/.ssh/id_rsa)"
+$ ssh -t -p 2299 dokku@app.ic.ufba.br config:set --encoded <NOME_DO_APP> KEY="$(base64 ~/.ssh/id_rsa)
 ```
 ## Comandos Docker (containers)
 
@@ -169,14 +169,14 @@ $ ssh -t -p 2299 dokku@app.ic.ufba.br config:set --encoded <NOME_DO_APP> KEY="$(
 Este comando reunirá todos os IDs de container em execução para seu aplicativo e chamará a inspeção do docker, limpando os dados de saída para que possam ser copiados e colados em outro lugar com segurança. Exemplo de execução:
 
 ```
-$ ssh -t -p 2299 dokku@app.ic.ufba.br ps:inspect <NOME_DA_APLICAÇÃO> "
+$ ssh -t -p 2299 dokku@app.ic.ufba.br ps:inspect <NOME_DA_APLICAÇÃO> 
 ```
 - `ps:report`
 
 Exibe um relatório de processo para um ou mais aplicativos. Exemplo de execução com a aplicação:
 
 ```
-$ ssh -t -p 2299 dokku@app.ic.ufba.br ps:report <NOME_DA_APLICAÇÃO> "
+$ ssh -t -p 2299 dokku@app.ic.ufba.br ps:report <NOME_DA_APLICAÇÃO> 
 ```
 Exemplo de saída com a aplicação "teste":
 
@@ -198,27 +198,43 @@ Exemplo de saída com a aplicação "teste":
 Inicializa a aplicação. Exemplo de execução:
 
 ```
-$ ssh -t -p 2299 dokku@app.ic.ufba.br ps:start <NOME_DA_APLICAÇÃO> "
+$ ssh -t -p 2299 dokku@app.ic.ufba.br ps:start <NOME_DA_APLICAÇÃO> 
 ```
 - `ps:stop`
 
 Para a execução de uma aplicação. Exemplo de execução:
 
 ```
-$ ssh -t -p 2299 dokku@app.ic.ufba.br ps:stop <NOME_DA_APLICAÇÃO> "
+$ ssh -t -p 2299 dokku@app.ic.ufba.br ps:stop <NOME_DA_APLICAÇÃO> 
 ```
 - `ps:restart`
 
 Reinicializa uma aplicação. Exemplo de execução:
 
 ```
-$ ssh -t -p 2299 dokku@app.ic.ufba.br ps:restart <NOME_DA_APLICAÇÃO> "
+$ ssh -t -p 2299 dokku@app.ic.ufba.br ps:restart <NOME_DA_APLICAÇÃO> 
 ```
 - `ps:rebuild`
 
 Reconstrói o container Docker da aplicação. Exemplo de execução:
 
 ```
-$ ssh -t -p 2299 dokku@app.ic.ufba.br ps:rebuild <NOME_DA_APLICAÇÃO> "
+$ ssh -t -p 2299 dokku@app.ic.ufba.br ps:rebuild <NOME_DA_APLICAÇÃO> 
 ```
+O Dokku também permite o agendamento de tarefas utilizando a ferramenta `cron`. Comandos permitidos:
 
+- `cron:list <APP>`
+
+Listagem de tarefas agendadas para uma determinada aplicação. Exemplo de execução:
+
+```
+$ ssh -t -p 2299 dokku@app.ic.ufba.br cron:list <NOME_DA_APLICAÇÃO> 
+```
+- `cron:report <APP>`
+
+Exibe um relatório de tarefas configuradas para uma aplicação. Exemplo de execução:
+
+```
+$ ssh -t -p 2299 dokku@app.ic.ufba.br cron:report <NOME_DA_APLICAÇÃO> 
+```
+Para mais informações sobre como configurar um cron-job para sua aplicação, acesse a página de agendamentos de tarefas na [documentação oficial do Dokku](https://dokku.com/docs/processes/scheduled-cron-tasks/)
