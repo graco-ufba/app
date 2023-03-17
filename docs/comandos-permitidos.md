@@ -5,7 +5,7 @@ Para acessar/manipular a sua aplicação no servidor/container, seguem alguns co
 ```
 $ ssh -t -p 2299 dokku@app.ic.ufba.br <COMANDO> <NOME_DA_APLICAÇÃO>
 ```
-Lembramos que conforme explicitado no tópico [Configurando ambiente local(ambiente-local.md)], podemos suprimir os modificadores `-t` e `-p 2299`. Fica a critério do usuário.
+Lembramos que conforme explicitado no tópico [Configurando ambiente local](ambiente-local.md), podemos suprimir os modificadores `-t` e `-p 2299`. Fica a critério do usuário.
 
 # Comandos permitidos:
 
@@ -21,7 +21,7 @@ $ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:expose teste
 
 Nesse momento, o servidor retornará em quais portas o serviço está exposto/disponível para acesso. 
 
-# Obs.: Precisamos definir internamente no NATI como será esse acesso ao banco de dados dos containers e se erá mesmo possível, uma vez que vai demandar liberação de portas pela STI. Se for possível, precisaremos permitir mais comandos no ACL para manipulação do banco.
+## Obs.: Em fase de testes.
 
 ## Comandos dokku
 
@@ -68,7 +68,7 @@ Da mesma forma como para os apps, o sistema exigirá confirmação de segurança
 
 - `builder:set` 
 
-Configura o modo de construção(build) conforme visto no tópico [configurando modo de construção(modo-build.md)]
+Configura o modo de construção(build) conforme visto no tópico [configurando modo de construção](modo-build.md)
 
 - `config:show`
 
@@ -93,7 +93,7 @@ GIT_REV:               50b80751d267c9202ca34775b81ff3edd7b45f2c
 ```
 - `config:set`
 
-Comando para configuração das [variáveis de ambiente(variaveis-de-ambiente.md)] conforme já visto anteriormente. Exemplo de execução para configuração de duas variáveis:
+Comando para configuração das [variáveis de ambiente](variaveis-de-ambiente.md) conforme já visto anteriormente. Exemplo de execução para configuração de duas variáveis:
 
 ```
 $ ssh -t -p 2299 dokku@app.ic.ufba.br config:set <NOME_DA_APLICAÇÃO> VAR1="valor\ 1" VAR2="valor\ 2"
