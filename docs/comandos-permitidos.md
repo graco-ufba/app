@@ -11,7 +11,7 @@ Lembramos que conforme explicitado no tópico [configurando ambiente local](ambi
 
 ## Comandos para banco de dados: 
 
-- `postgres:expose <service> <ports>`
+- `postgres:expose`
 
 Este exemplo acima foi feito com comando de banco de dados postgreSQL, mas poderia ser outro. O comando expõe o banco de dados presente no container Docker à uma porta para acesso externo ao processo. Isso é útil para realizar consultas no banco, backups e afins. Exemplo de execução:
 
@@ -19,9 +19,66 @@ Este exemplo acima foi feito com comando de banco de dados postgreSQL, mas poder
 $ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:expose teste
 ```
 
-Nesse momento, o servidor retornará em quais portas o serviço está exposto/disponível para acesso. 
+Nesse momento, o servidor retornará em quais portas o serviço está exposto/disponível para acesso. Pode-se também expor o banco de dados a uma porta específica. Exemplo de execução:
 
-## Obs.: Em fase de testes.
+```
+$ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:expose teste 9000
+```
+- `postgres:unexpose`
+
+Este comando desfaz a configuração anterior. Exemplo de execução:
+
+```
+$ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:unexpose teste
+```
+- `postgres:export`
+
+Este comando fará um backup do banco de dados da aplicação na máquina local. Exemplo de execução:
+
+```
+$ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:export [DB_NAME] > [DB_NAME].dump
+```
+Obs.: O arquivo `.dump` será gerado na pasta local onde foi rodado o comando `export`.
+
+- `postgres:import`
+
+Esse comando fará a importação de um banco de dados externo para o container da aplicação no servidor. Exemplo de execução:
+
+```
+$ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:import [DB_NAME] < [DB_NAME].dump
+```
+- `postgres:destroy`
+
+Esse comando desvincula o banco de dados da aplicação do usuário e apaga o banco. Exemplo de execução:
+
+```
+$ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:destroy [NOME_DB]
+```
+**Observação importante:** Caso o usuário precise por qualquer motivo, destruir o banco de dados, terá que entrar em contato novamente com o suporteIC para a recriação de novo banco de dados no container. Nesse caso, o usuário terá que fazer a importação de um backup dentro do container com o comando `postgres:import`.  
+
+- `postgres:info`
+
+Esse comando permite ler as configurações da instalação do banco de dados da aplicação. Exemplo de execução:
+
+```
+$ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:info [NOME_DB]
+```
+Exemplo de saída com o banco de dados da aplicação "teste":
+
+```
+=====> teste_production postgres service information
+       Config dir:          /var/lib/dokku/services/postgres/teste_production/data
+       Config options:                               
+       Data dir:            /var/lib/dokku/services/postgres/teste_production/data
+       Dsn:                 postgres://postgres:4d289d66a5617ca55a696ab70eea145f@dokku-postgres-teste-production:5432/teste_production
+       Exposed ports:       5432->9050               
+       Id:                  f5868b071be41ec552885a103f0181891a0aef3f6613fbded99bd08412957568
+       Internal ip:         172.17.0.4               
+       Links:               teste                    
+       Service root:        /var/lib/dokku/services/postgres/teste_production
+       Status:              running                  
+       Version:             postgres:14.5 
+```
 
 ## Comandos dokku
 
@@ -60,6 +117,8 @@ Comando que desvincula a aplicação do seu banco de dados associado e a apaga d
 $ ssh -t -p 2299 dokku@app.ic.ufba.br apps:destroy teste
 ```
 Obs.: O banco de dados não morre junto com a aplicação. Para destruí-lo, vejamos um exemplo com um banco de dados postgresSQL:
+
+**Observação importante:** Caso o usuário precise por qualquer motivo, destruir a aplicação, terá que entrar em contato novamente com o suporteIC para a recriação de nova aplicação no container. Nesse caso, o usuário terá que fazer novamente o deploy da aplicação com o comando `git push -f dokku master`. 
 
 ```
 $ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:destroy teste_db
