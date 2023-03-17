@@ -54,7 +54,7 @@ Esse comando desvincula o banco de dados da aplicação do usuário e apaga o ba
 ```
 $ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:destroy [NOME_DB]
 ```
-**Observação importante:** Caso o usuário precise por qualquer motivo, destruir o banco de dados, terá que entrar em contato novamente com o suporteIC para a recriação de novo banco de dados no container. Nesse caso, o usuário terá que fazer a importação de um backup dentro do container com o comando `postgres:import`.  
+**Observação importante:** Caso o usuário precise por qualquer motivo, destruir o banco de dados, terá que entrar em contato novamente com o [suporteIC](https://suporteic.ufba.br) para a recriação de novo banco de dados no container. Nesse caso, o usuário terá que fazer a importação de um backup dentro do container com o comando `postgres:import`.  
 
 - `postgres:info`
 
@@ -118,7 +118,7 @@ $ ssh -t -p 2299 dokku@app.ic.ufba.br apps:destroy teste
 ```
 Obs.: O banco de dados não morre junto com a aplicação. Para destruí-lo, vejamos um exemplo com um banco de dados postgresSQL:
 
-**Observação importante:** Caso o usuário precise por qualquer motivo, destruir a aplicação, terá que entrar em contato novamente com o suporteIC para a recriação de nova aplicação no container. Nesse caso, o usuário terá que fazer novamente o deploy da aplicação com o comando `git push -f dokku master`. 
+**Observação importante:** Caso o usuário precise por qualquer motivo, destruir a aplicação, terá que entrar em contato novamente com o [suporteIC](https://suporteic.ufba.br) para a recriação de nova aplicação no container. Nesse caso, o usuário terá que fazer novamente o deploy da aplicação com o comando `git push -f dokku master`. 
 
 ```
 $ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:destroy teste_db
