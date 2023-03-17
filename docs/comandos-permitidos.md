@@ -5,7 +5,7 @@ Para acessar/manipular a sua aplicação no servidor/container, seguem alguns co
 ```
 $ ssh -t -p 2299 dokku@app.ic.ufba.br <COMANDO> <NOME_DA_APLICAÇÃO>
 ```
-Lembramos que conforme explicitado no tópico [Configurando ambiente local](ambiente-local.md), podemos suprimir os modificadores `-t` e `-p 2299`. Fica a critério do usuário.
+Lembramos que conforme explicitado no tópico [configurando ambiente local](ambiente-local.md), podemos suprimir os modificadores `-t` e `-p 2299`. Fica a critério do usuário.
 
 # Comandos permitidos:
 
