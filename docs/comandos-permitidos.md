@@ -251,4 +251,4 @@ Exibe um relatório de tarefas configuradas para uma aplicação. Exemplo de exe
 ```
 $ ssh -t -p 2299 dokku@app.ic.ufba.br cron:report <NOME_DA_APLICAÇÃO> 
 ```
-Para mais informações sobre como configurar um cron-job para sua aplicação, acesse a página de agendamentos de tarefas na [documentação oficial - scheduled-cron-tasks](https://dokku.com/docs/processes/scheduled-cron-tasks/)
+Para mais informações sobre como configurar um cron-job para sua aplicação, acesse a página de agendamentos de tarefas na [documentação oficial - scheduled-cron-tasks](https://dokku.com/docs/processes/scheduled-cron-tasks/).
