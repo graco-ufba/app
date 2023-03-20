@@ -162,6 +162,20 @@ Exemplo de execução em base64:
 ```
 $ ssh -t -p 2299 dokku@app.ic.ufba.br config:set --encoded <NOME_DO_APP> KEY="$(base64 ~/.ssh/id_rsa)
 ```
+- `enter <NOME_APP>`
+
+Este comando permite rodar comandos em um container em execução, muito útil para debug. Exemplo simples com a aplicação `teste` utilizando a variação de comando `web`:
+
+```
+$ ssh -t -p 2299 dokku@app.ic.ufba.br enter teste web echo olá 
+```
+Saída do comando no terminal:
+
+```
+$ olá 
+```
+Outras variações de comando estão disponíveis e podem ser vistas com mais detalhes na [documentação oficial - Entering Containers](https://dokku.com/docs/processes/entering-containers/).
+
 ## Comandos Docker (containers)
 
 - `ps:inspect`
@@ -237,4 +251,4 @@ Exibe um relatório de tarefas configuradas para uma aplicação. Exemplo de exe
 ```
 $ ssh -t -p 2299 dokku@app.ic.ufba.br cron:report <NOME_DA_APLICAÇÃO> 
 ```
-Para mais informações sobre como configurar um cron-job para sua aplicação, acesse a página de agendamentos de tarefas na [documentação oficial do Dokku](https://dokku.com/docs/processes/scheduled-cron-tasks/)
+Para mais informações sobre como configurar um cron-job para sua aplicação, acesse a página de agendamentos de tarefas na [documentação oficial - scheduled-cron-tasks](https://dokku.com/docs/processes/scheduled-cron-tasks/)
