@@ -164,7 +164,7 @@ $ ssh -t -p 2299 dokku@app.ic.ufba.br config:set --encoded <NOME_DA_APLICAÇÃO>
 ```
 - `enter <NOME_DA_APLICAÇÃO>`
 
-Este comando permite rodar comandos em um container em execução, muito útil para debug. Exemplo simples com a aplicação `teste`, utilizando uma variação do comando `enter`, no caso de teste, o processo `web`:
+Este comando permite rodar comandos em um container em execução, muito útil para debug. Segue um exemplo simples com a aplicação `teste`, utilizando uma variação do comando `enter`, no caso de teste, o processo `web`:
 
 ```
 $ ssh -t -p 2299 dokku@app.ic.ufba.br enter teste web echo olá 
