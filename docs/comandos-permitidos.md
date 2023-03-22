@@ -176,6 +176,8 @@ $ olá
 ```
 Outras variações de comando estão disponíveis e podem ser vistas com mais detalhes na [documentação oficial - Entering Containers](https://dokku.com/docs/processes/entering-containers/).
 
+Obs.: Os processos devem ser definidos no Procfile, caso a sua aplicação não utilize um dockerfile. Um exemplo de configuração de Procfile está definido no tópico [configurando o modo de construção(build)](modo-build.md).  
+
 ## Comandos Docker (containers)
 
 - `ps:inspect`
