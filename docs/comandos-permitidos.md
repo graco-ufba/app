@@ -162,9 +162,9 @@ Exemplo de execução em base64:
 ```
 $ ssh -t -p 2299 dokku@app.ic.ufba.br config:set --encoded <NOME_DO_APP> KEY="$(base64 ~/.ssh/id_rsa)
 ```
-- `enter <NOME_APP>`
+- `enter <NOME_DA_APLICAÇÃO>`
 
-Este comando permite rodar comandos em um container em execução, muito útil para debug. Exemplo simples com a aplicação `teste` utilizando a variação de comando `web`:
+Este comando permite rodar comandos em um container em execução, muito útil para debug. Exemplo simples com a aplicação `teste`, utilizando uma variação do comando `enter`, no caso de teste, o processo `web`:
 
 ```
 $ ssh -t -p 2299 dokku@app.ic.ufba.br enter teste web echo olá 
