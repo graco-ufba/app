@@ -127,7 +127,7 @@ Da mesma forma como para os apps, o sistema exigirá confirmação de segurança
 
 - `builder:set` 
 
-Configura o modo de construção(build) conforme visto no tópico [configurando modo de construção](modo-build.md)
+Configura o modo de construção(build) conforme visto no tópico [configurando o modo de construção](modo-build.md)
 
 - `config:show`
 
@@ -160,7 +160,7 @@ $ ssh -t -p 2299 dokku@app.ic.ufba.br config:set <NOME_DA_APLICAÇÃO> VAR1="val
 Exemplo de execução em base64:
 
 ```
-$ ssh -t -p 2299 dokku@app.ic.ufba.br config:set --encoded <NOME_DO_APP> KEY="$(base64 ~/.ssh/id_rsa)
+$ ssh -t -p 2299 dokku@app.ic.ufba.br config:set --encoded <NOME_DA_APLICAÇÃO> KEY="$(base64 ~/.ssh/id_rsa)
 ```
 - `enter <NOME_DA_APLICAÇÃO>`
 
