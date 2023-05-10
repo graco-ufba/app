@@ -56,6 +56,14 @@ $ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:destroy [NOME_DB]
 ```
 **Observação importante:** Caso o usuário precise por qualquer motivo, destruir o banco de dados, terá que entrar em contato novamente com o [suporteIC](https://suporteic.ufba.br) para a recriação de novo banco de dados no container. Nesse caso, o usuário terá que fazer a importação de um backup dentro do container com o comando `postgres:import`.  
 
+- `postgres:connect`
+
+Esse comando permite que o usuário se conecte diretamente ao banco de dados da aplicação, sendo possível executar os comandos SQL necessários para alterações e/ou consultas caso deseje:
+
+```
+$ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:connect [NOME_DA_APLICAÇÃO]
+```
+
 - `postgres:info`
 
 Esse comando permite ler as configurações da instalação do banco de dados da aplicação. Exemplo de execução:
