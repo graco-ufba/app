@@ -58,10 +58,10 @@ $ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:destroy [NOME_DB]
 
 - `postgres:connect`
 
-Esse comando permite que o usuário se conecte diretamente ao banco de dados da aplicação, sendo possível executar os comandos SQL necessários para alterações e/ou consultas caso deseje.
+Esse comando permite que o usuário se conecte diretamente ao banco de dados da aplicação, sendo possível executar os comandos SQL necessários para alterações e/ou consultas caso deseje:
 
 ```
-$ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:connect [NOME_DA_APLICAÇÃO]
+$ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:connect [NOME_DB]
 ```
 
 - `postgres:info`
