@@ -3,8 +3,8 @@ theme: material
 nav:
   - index.md
   - chave-ssh.md
-  - deploy.md
   - ambiente-local.md
+  - deploy.md
   - variaveis-de-ambiente.md
   - modo-build.md
   - comandos-permitidos.md
