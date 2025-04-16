@@ -1,6 +1,6 @@
 # Visão geral
 
-A Rede IC fornece o serviço de hospedagem de aplicações web para a comunidade do Instituto de Computação, ainda de forma experimental. Neste momento, não realizamos backup dos dados e não hospedamos aplicações que utilizem intensivamente recursos de processamento ou armazenamento.
+A Rede IC fornece o serviço de hospedagem de aplicações web para a comunidade do Instituto de Computação, ainda de forma experimental. Neste momento, **NÃO realizamos backup dos dados** e não hospedamos aplicações que utilizem intensivamente recursos de processamento ou armazenamento.
 
 O serviço de hospedagem é baseado no [Dokku](https://dokku.com/), uma solução open source para plataforma como serviço (PaaS). O Dokku possibilita que o usuário faça o upload do código-fonte da aplicação via Git; o servidor realiza o build da aplicação e a executa em containers Docker isolados.
 
