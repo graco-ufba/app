@@ -1,0 +1,580 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../modo-build/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.1.1">
+    
+    
+      
+        <title>Comandos disponíveis - Hospedagem de Aplicações na Rede IC</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.402914a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#comandos-disponiveis" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Hospedagem de Aplicações na Rede IC" class="md-header__button md-logo" aria-label="Hospedagem de Aplicações na Rede IC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Hospedagem de Aplicações na Rede IC
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Comandos disponíveis
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Hospedagem de Aplicações na Rede IC" class="md-nav__button md-logo" aria-label="Hospedagem de Aplicações na Rede IC" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Hospedagem de Aplicações na Rede IC
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Visão geral
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chave-ssh/" class="md-nav__link">
+        Gerando chave SSH
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ambiente-local/" class="md-nav__link">
+        Configurando ambiente local
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deploy/" class="md-nav__link">
+        Realizando deploy
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../variaveis-de-ambiente/" class="md-nav__link">
+        Configurando as variáveis de ambiente
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modo-build/" class="md-nav__link">
+        Configurando o modo de construção (build)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Comandos disponíveis
+      </a>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="comandos-disponiveis">Comandos disponíveis</h1>
+<p>Para acessar/manipular a sua aplicação no servidor/container, seguem alguns comandos úteis permitidos para serem executados via SSH. Comando a ser executado precisa necessariamente seguir esse padrão:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br &lt;COMANDO&gt; &lt;NOME_DA_APLICAÇÃO&gt;
+</code></pre>
+<p>Lembramos que conforme explicitado no tópico <a href="../ambiente-local/">configurando ambiente local</a>, podemos suprimir os modificadores <code>-t</code> e <code>-p 2299</code>. Fica a critério do usuário.</p>
+<h1 id="comandos-permitidos">Comandos permitidos:</h1>
+<h2 id="comandos-para-banco-de-dados">Comandos para banco de dados:</h2>
+<ul>
+<li><code>postgres:expose</code></li>
+</ul>
+<p>Este exemplo acima foi feito com comando de banco de dados postgreSQL, mas poderia ser outro. O comando expõe o banco de dados presente no container Docker à uma porta para acesso externo ao processo. Isso é útil para realizar consultas no banco, backups e afins. Exemplo de execução:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:expose teste
+</code></pre>
+<p>Nesse momento, o servidor retornará em quais portas o serviço está exposto/disponível para acesso. Pode-se também expor o banco de dados a uma porta específica. Exemplo de execução:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:expose teste 9000
+</code></pre>
+<ul>
+<li><code>postgres:unexpose</code></li>
+</ul>
+<p>Este comando desfaz a configuração anterior. Exemplo de execução:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:unexpose teste
+</code></pre>
+<ul>
+<li><code>postgres:export</code></li>
+</ul>
+<p>Este comando fará um backup do banco de dados da aplicação na máquina local. Exemplo de execução:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:export [DB_NAME] &gt; [DB_NAME].dump
+</code></pre>
+<p>Obs.: O arquivo <code>.dump</code> será gerado na pasta local onde foi rodado o comando <code>export</code>.</p>
+<ul>
+<li><code>postgres:import</code></li>
+</ul>
+<p>Esse comando fará a importação de um banco de dados externo para o container da aplicação no servidor. Exemplo de execução:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:import [DB_NAME] &lt; [DB_NAME].dump
+</code></pre>
+<ul>
+<li><code>postgres:destroy</code></li>
+</ul>
+<p>Esse comando desvincula o banco de dados da aplicação do usuário e apaga o banco. Exemplo de execução:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:destroy [NOME_DB]
+</code></pre>
+<p><strong>Observação importante:</strong> Caso o usuário precise por qualquer motivo, destruir o banco de dados, terá que entrar em contato novamente com o <a href="https://suporteic.ufba.br">suporteIC</a> para a recriação de novo banco de dados no container. Nesse caso, o usuário terá que fazer a importação de um backup dentro do container com o comando <code>postgres:import</code>.  </p>
+<ul>
+<li><code>postgres:connect</code></li>
+</ul>
+<p>Esse comando permite que o usuário se conecte diretamente ao banco de dados da aplicação, sendo possível executar os comandos SQL necessários para alterações e/ou consultas caso deseje:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:connect [NOME_DB]
+</code></pre>
+<ul>
+<li><code>postgres:info</code></li>
+</ul>
+<p>Esse comando permite ler as configurações da instalação do banco de dados da aplicação. Exemplo de execução:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:info [NOME_DB]
+</code></pre>
+<p>Exemplo de saída com o banco de dados da aplicação "teste":</p>
+<pre><code>=====&gt; teste_production postgres service information
+       Config dir:          /var/lib/dokku/services/postgres/teste_production/data
+       Config options:                               
+       Data dir:            /var/lib/dokku/services/postgres/teste_production/data
+       Dsn:                 postgres://postgres:4d289d66a5617ca55a696ab70eea145f@dokku-postgres-teste-production:5432/teste_production
+       Exposed ports:       5432-&gt;9050               
+       Id:                  f5868b071be41ec552885a103f0181891a0aef3f6613fbded99bd08412957568
+       Internal ip:         172.17.0.4               
+       Links:               teste                    
+       Service root:        /var/lib/dokku/services/postgres/teste_production
+       Status:              running                  
+       Version:             postgres:14.5 
+</code></pre>
+<h2 id="comandos-dokku">Comandos dokku</h2>
+<ul>
+<li><code>run</code></li>
+</ul>
+<p>O comando <code>run</code> pode ser usado para executar um processo único para um comando específico. Isso iniciará um novo container e executará o comando desejado dentro desse container. A imagem do container será a mesma imagem do container usada para iniciar o aplicativo atualmente implantado. Exemplo de execução de listagem detalhada de arquivos de uma aplicação: </p>
+<pre><code># roda `ls -lah` no diretório `/app` da aplicação `teste`
+$ ssh -t -p 2299 dokku@app.ic.ufba.br run teste ls -lah
+</code></pre>
+<p>Obs.: Observe que nos caso do comando <code>run</code>, o nome da aplicação precisa vir ANTES do comando que se quer rodar.</p>
+<ul>
+<li><code>logs</code></li>
+</ul>
+<p>Exibe os logs da aplicação. Exemplo de execução:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br logs teste
+</code></pre>
+<ul>
+<li><code>urls</code></li>
+</ul>
+<p>Exibe as urls vinculadas à aplicação. Exemplo de execução:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br urls teste
+</code></pre>
+<p>Obs.: Decartar a usabilidade da url com schema http. Somente as requisições https irão funcionar por motivos de segurança. </p>
+<ul>
+<li><code>apps:destroy</code></li>
+</ul>
+<p>Comando que desvincula a aplicação do seu banco de dados associado e a apaga do servidor. Após a execução do comando, o sistema exigirá que escrevamos exatamente o nome da aplicação para confirmação da destruição. Exemplo de execução:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br apps:destroy teste
+</code></pre>
+<p>Obs.: O banco de dados não morre junto com a aplicação. Para destruí-lo, vejamos um exemplo com um banco de dados postgresSQL:</p>
+<p><strong>Observação importante:</strong> Caso o usuário precise por qualquer motivo, destruir a aplicação, terá que entrar em contato novamente com o <a href="https://suporteic.ufba.br">suporteIC</a> para a recriação de nova aplicação no container. Nesse caso, o usuário terá que fazer novamente o deploy da aplicação com o comando <code>git push -f dokku master</code>. </p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br postgres:destroy teste_db
+</code></pre>
+<p>Da mesma forma como para os apps, o sistema exigirá confirmação de segurança antes de proceder.</p>
+<ul>
+<li><code>builder:set</code> </li>
+</ul>
+<p>Configura o modo de construção(build) conforme visto no tópico <a href="../modo-build/">configurando o modo de construção</a></p>
+<ul>
+<li><code>config:show</code></li>
+</ul>
+<p>Exibe as configurações da aplicação no container Docker, bem como as variáveis de ambiente. Exemplo de execução:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br config:show teste
+</code></pre>
+<p>Saída do comando:</p>
+<pre><code>=====&gt; teste env vars
+DATABASE_URL:          postgres://postgres:4d289d66a5617ca55a696ab70eea145f@dokku-postgres-teste-production:5432/teste_production
+DOKKU_APP_PROXY_TYPE:  nginx
+DOKKU_APP_RESTORE:     1
+DOKKU_APP_TYPE:        herokuish
+DOKKU_PROXY_PORT:      80
+DOKKU_PROXY_PORT_MAP:  http:80:5000 https:443:5000
+DOKKU_PROXY_SSL_PORT:  443
+GIT_REV:               50b80751d267c9202ca34775b81ff3edd7b45f2c
+
+</code></pre>
+<ul>
+<li><code>config:set</code></li>
+</ul>
+<p>Comando para configuração das <a href="../variaveis-de-ambiente/">variáveis de ambiente</a> conforme já visto anteriormente. Exemplo de execução para configuração de duas variáveis:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br config:set &lt;NOME_DA_APLICAÇÃO&gt; VAR1=&quot;valor\ 1&quot; VAR2=&quot;valor\ 2&quot;
+</code></pre>
+<p>Exemplo de execução em base64:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br config:set --encoded &lt;NOME_DA_APLICAÇÃO&gt; KEY=&quot;$(base64 ~/.ssh/id_rsa)
+</code></pre>
+<ul>
+<li><code>enter &lt;NOME_DA_APLICAÇÃO&gt;</code></li>
+</ul>
+<p>Este comando permite rodar comandos em um container em execução, muito útil para debug. Segue um exemplo simples com a aplicação <code>teste</code>, utilizando uma variação do comando <code>enter</code>, no caso de teste, o processo <code>web</code>:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br enter teste web echo olá 
+</code></pre>
+<p>Saída do comando no terminal:</p>
+<pre><code>$ olá 
+</code></pre>
+<p>Outras variações de comando estão disponíveis e podem ser vistas com mais detalhes na <a href="https://dokku.com/docs/processes/entering-containers/">documentação oficial - Entering Containers</a>.</p>
+<p>Obs.: Os processos devem ser definidos no Procfile, caso a sua aplicação não utilize um dockerfile. Um exemplo de configuração de Procfile está definido no tópico <a href="../modo-build/">configurando o modo de construção(build)</a>.  </p>
+<h2 id="comandos-docker-containers">Comandos Docker (containers)</h2>
+<ul>
+<li><code>ps:inspect</code></li>
+</ul>
+<p>Este comando reunirá todos os IDs de container em execução para seu aplicativo e chamará a inspeção do docker, limpando os dados de saída para que possam ser copiados e colados em outro lugar com segurança. Exemplo de execução:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br ps:inspect &lt;NOME_DA_APLICAÇÃO&gt; 
+</code></pre>
+<ul>
+<li><code>ps:report</code></li>
+</ul>
+<p>Exibe um relatório de processo para um ou mais aplicativos. Exemplo de execução com a aplicação:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br ps:report &lt;NOME_DA_APLICAÇÃO&gt; 
+</code></pre>
+<p>Exemplo de saída com a aplicação "teste":</p>
+<pre><code>=====&gt; teste ps information
+       Deployed:                      true
+       Processes:                     1
+       Ps can scale:                  true
+       Ps computed procfile path:     Procfile
+       Ps global procfile path:       Procfile
+       Ps procfile path:              
+       Ps restart policy:             on-failure:10
+       Restore:                       true
+       Running:                       true
+       Status web 1:                  running (CID: 05850b537eb)
+</code></pre>
+<ul>
+<li><code>ps:start</code></li>
+</ul>
+<p>Inicializa a aplicação. Exemplo de execução:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br ps:start &lt;NOME_DA_APLICAÇÃO&gt; 
+</code></pre>
+<ul>
+<li><code>ps:stop</code></li>
+</ul>
+<p>Para a execução de uma aplicação. Exemplo de execução:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br ps:stop &lt;NOME_DA_APLICAÇÃO&gt; 
+</code></pre>
+<ul>
+<li><code>ps:restart</code></li>
+</ul>
+<p>Reinicializa uma aplicação. Exemplo de execução:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br ps:restart &lt;NOME_DA_APLICAÇÃO&gt; 
+</code></pre>
+<ul>
+<li><code>ps:rebuild</code></li>
+</ul>
+<p>Reconstrói o container Docker da aplicação. Exemplo de execução:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br ps:rebuild &lt;NOME_DA_APLICAÇÃO&gt; 
+</code></pre>
+<p>O Dokku também permite o agendamento de tarefas utilizando a ferramenta <code>cron</code>. Comandos permitidos:</p>
+<ul>
+<li><code>cron:list &lt;APP&gt;</code></li>
+</ul>
+<p>Listagem de tarefas agendadas para uma determinada aplicação. Exemplo de execução:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br cron:list &lt;NOME_DA_APLICAÇÃO&gt; 
+</code></pre>
+<ul>
+<li><code>cron:report &lt;APP&gt;</code></li>
+</ul>
+<p>Exibe um relatório de tarefas configuradas para uma aplicação. Exemplo de execução:</p>
+<pre><code>$ ssh -t -p 2299 dokku@app.ic.ufba.br cron:report &lt;NOME_DA_APLICAÇÃO&gt; 
+</code></pre>
+<p>Para mais informações sobre como configurar um cron-job para sua aplicação, acesse a página de agendamentos de tarefas na <a href="https://dokku.com/docs/processes/scheduled-cron-tasks/">documentação oficial - scheduled-cron-tasks</a>.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.b78d2936.min.js"></script>
+      
+    
+  </body>
+</html>
