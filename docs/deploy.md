@@ -24,3 +24,8 @@ $ git push -f dokku master
 ```
 $ git push dokku master
 ```
+
+## Porta do serviço
+
+Por padrão, o Dokku tenta acessar a aplicação na porta 5000. Configure sua aplicação para executar nessa porta ou então use os [comandos `proxy:ports`](https://dokku.com/docs~v0.28.4/networking/port-management/) para configurar o mapeamento das portas 80 (http) e 443 (https) para a porta usada pela sua aplicação.
+
