@@ -5,12 +5,12 @@ No Dokku, é possível configurar o modo de build da sua aplicação. Esse é o 
 - Build herokuish: 
 
 ```
-ssh -t -p 2299 dokku@app.ic.ufba.br builder:set <APP> selected herokuish
+ssh -t -p 9999 dokku@app.ic.ufba.br builder:set <APP> selected herokuish
 ```
 - Build Dockerfile:
 
 ```
-ssh -t -p 2299 dokku@app.ic.ufba.br builder:set <APP> selected dockerfile
+ssh -t -p 9999 dokku@app.ic.ufba.br builder:set <APP> selected dockerfile
 ```
 Caso o usuário não possua um Dockerfile na sua aplicação, um Procfile precisa necessariamente ser criado na raiz da aplicação. Um exemplo de configuração simples e funcional pode ser configurado da seguinte forma:
 
