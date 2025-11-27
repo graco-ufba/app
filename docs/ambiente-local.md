@@ -11,8 +11,8 @@ $ ssh -t -p 9999 dokku@app.ic.ufba.br <COMANDO> <NOME_DA_APLICAÇÃO>
 Para que não seja necessário executar todo esse comando a cada vez, podemos suprimir esses modificadores de porta e PTY, configurando um script em `~/.ssh/config` inserindo as seguintes linhas de comando:
 
 ```
-Host app.ic.ufba.br 200.128.51.122
-  HostName 200.128.51.122
+Host app.ic.ufba.br 200.128.51.137
+  HostName 200.128.51.137
   Port 9999
   User dokku
   IdentityFile ~/.ssh/dokku
