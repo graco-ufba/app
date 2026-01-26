@@ -9,3 +9,8 @@ Execute o comando `mkdocs serve` na raiz do projeto para visualizar a documenta�
 
 A documentação em HTML gerada a partir deste repositório se encontra em <https://graco-ufba.github.io/app/>.
 
+Para forçar o deploy da documentação, execute o comando:
+
+```bash
+python3 -m mkdocs gh-deploy --force
+```
